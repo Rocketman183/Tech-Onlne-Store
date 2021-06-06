@@ -1,0 +1,11 @@
+include head.pug 
+include header.pug
+
+block variables
+
+doctype html
+html(lang='ru')
+	+head(page_title || '', scripts || [])
+	body
+		+header
+		script(src='js/index.js')

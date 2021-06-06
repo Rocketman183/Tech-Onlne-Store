@@ -1,0 +1,58 @@
+.header {
+	&-contacts {
+		background: black;
+		padding: 8px 0;
+		color: #fff;
+		font: 10px'Poppins Semi-bold';
+		height: 40px;
+
+		.workspace {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__work-hours {
+			position: relative;
+			text-align: center;
+			width: 180px;
+			height: 25px;
+			display: flex;
+			padding: 5px 8px;
+			border: 1px solid #ACACAC;
+			border-radius: 15px;
+			background: inherit;
+			
+			p {
+				margin-right: 7px;
+				color: #fff;
+
+				span {
+					color: #A2A6B0;
+				}
+			}
+
+			img {
+				width: 11px;
+				height: 10px;
+				padding-top: 5px;
+			}
+
+		}
+
+		&__adress {
+			display: none;
+		}
+
+		&__phone {
+			padding: 5px 0;
+		}
+	}
+}
+
+.shop-info {
+	display: none;
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	background: red;
+}

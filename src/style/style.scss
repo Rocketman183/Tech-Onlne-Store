@@ -1,0 +1,14 @@
+@import "libs";
+@import "constants";
+@import "functions";
+@import "mixins";
+@import "nullstyle";
+
+
+//СТИЛИ
+@import "common/fonts";
+@import "common/base";
+@import "common/workspace";
+
+//БЛОКИ ПО БЭМ ИЗ ПАПКИ BLOCKS
+@import "blocks/header.scss"
