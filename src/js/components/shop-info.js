@@ -1,11 +1,11 @@
 function openInfo() {
 
-	let button = document.getElementsByClassName('header-contacts__work-hours');
-	let infoWindow = document.getElementsByClassName('shop-info');
+	let infoWindow = document.querySelector('.shop-info');
 
-	button.addEventListener('click', () => {
-		button.style.backgroindColor = 'red';
-	})
+	if (infoWindow.style.display = 'none') {
+		infoWindow.style.display = 'block';
+	} else {
+		infoWindow.style.display = 'none';
+	}
+
 }
-
-export { openInfo }

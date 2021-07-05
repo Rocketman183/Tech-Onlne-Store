@@ -13,17 +13,18 @@
 
 		&__work-hours {
 			position: relative;
-			text-align: center;
-			width: 180px;
+			width: 175/375%;
 			height: 25px;
 			display: flex;
-			padding: 5px 8px;
+			align-items: center;
+			padding: 5px 6px;
 			border: 1px solid #ACACAC;
 			border-radius: 15px;
 			background: inherit;
+			font: 10px'Poppins Semi-bold';
 			
 			p {
-				margin-right: 7px;
+				margin-right: 2px;
 				color: #fff;
 
 				span {
@@ -34,7 +35,7 @@
 			img {
 				width: 11px;
 				height: 10px;
-				padding-top: 5px;
+				padding-top: 3px;
 			}
 
 		}

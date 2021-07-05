@@ -2,7 +2,7 @@ mixin header()
 	header.header
 		.header-contacts
 			.workspace
-				button.header-contacts__work-hours
+				button(onclick='openInfo()').header-contacts__work-hours
 					p #[span Mon-Thu:] 9:00 AM - 5:30 PM
 					img(src='../../images/work-hour-arrow.svg')
 				.header-contacts__adress

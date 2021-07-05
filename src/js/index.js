@@ -1,3 +1,3 @@
-import { openInfo } from 'components/shop-info.js'
-
-openInfo();
+//= libs.js
+//= components/Settings.js
+//= components/shop-info.js
