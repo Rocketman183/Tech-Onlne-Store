@@ -6,6 +6,21 @@
 		font: 10px'Poppins Semi-bold';
 		height: 40px;
 
+		&>.workspace>img {
+			background: #0156FF;
+			border-radius: 100px;
+			width: 50px;
+			display: none;
+
+			@media #{$tablet} {
+				display: block;
+			}
+
+			@media #{$desktop} {
+				display: none;
+			}
+		}
+
 		.workspace {
 			display: flex;
 			justify-content: space-between;
@@ -38,14 +53,60 @@
 				padding-top: 3px;
 			}
 
+			@media #{$tablet} {
+				border: 0px;
+			}
 		}
 
 		&__adress {
 			display: none;
+			padding: 5px;
+
+			a {
+				color: #fff;
+				font: 10px'Poppins Semi-bold';
+				text-decoration: underline;
+				line-height: 16px;
+				font-style: normal;
+			}
+			@media #{$tablet} {
+				display: flex;
+
+				p {
+					display: none;
+				}
+			}
+
+			@media #{$desktop} {
+				p {
+					display: block;
+					margin-right: 5px;
+					color: #ACACAC;
+				}
+			}
 		}
 
 		&__phone {
 			padding: 5px 0;
+			display: flex;
+
+			@media #{$tablet} {
+				display: none;
+			}
+
+			@media #{$desktop} {
+				display: flex;
+			}
+		}
+
+		&__networks {
+			display: none;
+			img {
+				height: 15px;
+			}
+			@media screen and (min-width:1280px) {
+				display: block;
+			}
 		}
 	}
 }

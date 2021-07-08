@@ -1,2 +1,6 @@
 $workspace-mobile: 395/425 * 100%;
+$workspace-tablet: 728/768 * 100%;
 $workspace-desktop: 1398/1920 * 100%;
+
+$tablet: screen and (min-width:768px);
+$desktop: screen and (min-width:1280px);

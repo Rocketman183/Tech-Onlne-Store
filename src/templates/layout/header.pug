@@ -2,11 +2,17 @@ mixin header()
 	header.header
 		.header-contacts
 			.workspace
-				button(onclick='openInfo()').header-contacts__work-hours
+				img(src="../../images/icons/Logo.svg")
+				button(onClick='openInfo()').header-contacts__work-hours
 					p #[span Mon-Thu:] 9:00 AM - 5:30 PM
 					img(src='../../images/work-hour-arrow.svg')
 				.header-contacts__adress
+					p Visit our showroom in 1234 Street Adress City Address, 1234
+					a(href="#") Contact us 
 				.header-contacts__phone
 					p Call Us: (00) 1234 5678
+					.header-contacts__networks
+						a(href="#"): img(src="../../images/icons/facebook.svg")
+						a(href="#"): img(src="../../images/icons/instagram.svg") 
 		.shop-info
 		.header-nav

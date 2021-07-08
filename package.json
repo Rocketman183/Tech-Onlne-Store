@@ -22,6 +22,7 @@
     "@babel/preset-env": "^7.14.4",
     "@babel/preset-stage-2": "^7.8.3",
     "@babel/register": "^7.13.16",
+    "@fancyapps/fancybox": "^3.5.7",
     "babel": "^6.23.0",
     "babel-eslint": "^10.1.0",
     "del": "^6.0.0",
