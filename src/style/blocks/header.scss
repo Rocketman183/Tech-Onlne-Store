@@ -6,10 +6,10 @@
 		font: 10px'Poppins Semi-bold';
 		height: 40px;
 
-		&>.workspace>img {
+		&>.workspace>a{
 			background: #0156FF;
-			border-radius: 100px;
-			width: 50px;
+			border-radius: 50%;
+			height: 50px;
 			display: none;
 
 			@media #{$tablet} {
@@ -109,12 +109,249 @@
 			}
 		}
 	}
+
+	&-nav {
+		padding: 10px 0;
+		padding-bottom: 20px;
+		background: #0156FF;
+		border: 1px solid #ACACAC;
+
+		&_menu {
+			display: flex;
+			justify-content: space-between;
+
+			&__open-button {
+				width: 25px;
+				background: inherit;
+			}
+
+			&__logo>svg>path {
+				width: 50px;
+				height: 40px;
+			}
+
+			&__our-deals {
+				background: inherit;
+				border: 2px solid #fff;
+				border-radius: 50px;
+				padding: 0 15px;
+				font: 14px 'Poppins Semi-bold';
+				color: #fff;
+			}
+
+			&__search {
+				display: none;
+			}
+
+			&__cart {
+				position: relative;
+				margin-top: 10px;
+				width: 30px;
+
+				&_num {
+					position: absolute;
+					top: -8px;
+					right: -8px;
+					width: 18px;
+					height: 18px;
+					text-align: center;
+					color: #0156FF;
+					background: #fff;
+					border-radius: 50%;
+					padding: 2px;
+					font: 9px 'Poppins Semi-bold';
+				}
+
+			}
+
+			&__user-profile {
+				background: inherit;
+				border: 2px solid #FFFFFF;
+				border-radius: 50%;
+				height: 30px;
+				width: 30px;
+				margin-top: 5px;
+			}
+
+			&_search {
+				display: none;
+			}
+
+			&_categories {
+				display: none;
+				margin-top: 10px;
+
+				li {
+					margin-right: 1vw;
+				}
+
+				a {
+					font: 12px 'Poppins Semi-bold';
+					color: black;
+					margin-right: auto;
+				}
+			}
+
+			@media #{$tablet} {
+				display: grid;
+				grid-template-columns: 1fr 10fr 1fr 1fr;
+
+				&__our-deals {
+					display: none;
+				}
+
+				&__logo {
+					display: none;
+				}
+
+				&__cart {
+					margin-left: auto;
+					margin-top: 10px;
+				}
+
+				&__user-profile {
+					margin-left: auto;
+				}
+
+				&_search {
+					display: block;
+					form {
+						position: relative;
+						input {
+							width: 100%;
+							height: 40px;
+							border-radius: 25px;
+							font: 12px 'Poppins Semi-bold';
+							color: black;
+							padding-left: 35px;
+
+							::placeholder {
+								color: #CACDD8;
+							}
+						}
+
+						button {
+							width: 15px;
+							height: 15px;
+							position: absolute;
+							top: 12.5px;
+							left: 15px;
+
+							img {
+								background: #fff;
+							}
+				}
+			}
+				}
+			}
+
+			@media #{$desktop} {
+				grid-template-columns: 1fr 6fr 1.5fr 1fr 1fr 1fr;
+				&_search {
+					display: none;
+				}
+
+				&__open-button {
+					display: none;
+				}
+
+				&_categories {
+					display: flex;
+
+					:hover {
+						color: #0156FF;
+					}
+				}
+
+				&__logo {
+					display: block;
+
+					>svg>path {
+						fill: #0156FF;
+					}
+					
+				}
+
+				&__cart {
+					margin-top: 10px;
+					a>svg>path{
+						fill: black;
+					}
+					
+					&_num {
+						color: #fff;
+						background: #0156FF;
+					}
+				}
+
+				&__search {
+					display: block;
+					background: #fff;
+					width: 15px;
+					margin-left: auto;
+					margin-top: 5px;
+				}
+				
+				&__our-deals {
+					display: block;
+					color: #0156FF;
+					font: 12px 'Poppins Semi-bold';
+					border: 2px solid #0156FF;
+					margin-right: auto;
+				}
+
+				&__user-profile{
+					>svg>path {
+						fill: black;
+					}
+
+					border: 2px solid black;
+				}
+			}
+		}
+
+		&_search {
+			margin-top: 10px;
+
+			form {
+				position: relative;
+				input {
+					width: 100%;
+					height: 40px;
+					border-radius: 25px;
+					font: 12px 'Poppins Semi-bold';
+					color: black;
+					padding-left: 35px;
+
+					::placeholder {
+						color: #CACDD8;
+					}
+				}
+
+				button {
+					width: 15px;
+					height: 15px;
+					position: absolute;
+					top: 12.5px;
+					left: 15px;
+
+					img {
+						background: #fff;
+					}
+				}
+			}
+
+			@media #{$tablet} {
+				display: none;
+			}
+		}
+
+		@media #{$desktop} {
+			background: #fff;
+		}
+	}
 }
 
-.shop-info {
-	display: none;
-	width: 100%;
-	height: 20px;
-	position: absolute;
-	background: red;
-}
+
+
+
