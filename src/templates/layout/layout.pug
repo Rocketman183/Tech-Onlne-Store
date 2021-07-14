@@ -7,4 +7,6 @@ doctype html
 html(lang='ru')
 	+head(page_title || '', scripts || [])
 	body
-		+header
+		+header()
+		main
+			block content

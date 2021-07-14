@@ -14,6 +14,7 @@
   "author": "Dmitry Martyashev <dimoffmart@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@types/swiper": "^5.4.3",
     "gulp": "^4.0.2"
   },
   "dependencies": {
@@ -47,6 +48,7 @@
     "jquery": "^3.6.0",
     "pug": "^2.0.4",
     "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0"
+    "stylelint-config-standard": "^22.0.0",
+    "swiper": "^6.7.5"
   }
 }
