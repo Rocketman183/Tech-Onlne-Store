@@ -1,3 +1,17 @@
-include ./product-card
+include product-card
+
 mixin new-products()
-	.card
+	.workspace
+		.new-products__head
+			h1 New Products
+			a(href="#") See All New Products 
+		.new-products.swiper-container 
+			.new-products__wrapper.swiper-wrapper
+				.new-products__slide.swiper-slide
+					+product-card
+				.new-products__slide.swiper-slide
+					+product-card
+				.new-products__slide.swiper-slide
+					+product-card
+			.swiper-button-prev
+			.swiper-button-next
