@@ -1,0 +1,47 @@
+.product-card {
+	box-sizing: content-box;
+	padding: 0 20px;
+	&__availability {
+		display: flex;
+		font: 10px 'Poppins';
+		h2 {
+			margin-left: 2px;
+		}
+	}
+
+	&>a>img {
+		width: 100px;
+		margin: auto;
+		@media #{$tablet} {
+			width: 150px;
+		}
+	}
+
+	&__rating {
+		display: flex;
+		margin: 10px 0;
+		h2 {
+			color: #A2A6B0;
+			font: 9px 'Poppins';
+			margin-left: 2px;
+
+			@media #{$tablet} {
+				font: 10px;
+			}
+		}
+	}
+
+	&>a {
+		font: 11px 'Poppins';
+		color: black;
+		text-decoration: dashed;
+	}
+
+	&__price {
+		margin: 10px 0;
+		font: 13px 'Poppins';
+		&_actual {
+			font: 15px 'Poppins Semi-bold';
+		}
+	}
+}

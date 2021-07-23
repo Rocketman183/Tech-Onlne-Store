@@ -1,2 +1,17 @@
-mixin product-card
-	i.fas.fa-check-circle 
+mixin product-card(availability, src, title, price)
+	.product-card
+		.product-card__availability
+			if availability === 'yes'
+				img(src="../../images/icons/check-mark.svg")
+				h2(style='color: #78A962') in stock
+			else
+				img(src="../../images/icons/call-mark.svg")
+				h2(style='color: #C94D3F') check availability
+		a(href='#'): img(src=src)
+		.product-card__rating
+			img(src="../../images/rating.svg")
+			h2 Reviews (4)
+		a(href="#")= title
+		.product-card__price
+			p(style="font:14px; color:#666666; text-decoration-line: line-through;")= price
+			p.product-card__price_actual= price

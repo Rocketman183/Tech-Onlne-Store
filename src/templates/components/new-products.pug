@@ -8,10 +8,16 @@ mixin new-products()
 		.new-products.swiper-container 
 			.new-products__wrapper.swiper-wrapper
 				.new-products__slide.swiper-slide
-					+product-card
+					+product-card('yes','../../images/new-products/1.svg',standart_title,standart_price)
 				.new-products__slide.swiper-slide
-					+product-card
+					+product-card('no','../../images/new-products/2.svg',standart_title,standart_price)
 				.new-products__slide.swiper-slide
-					+product-card
+					+product-card('yes','../../images/new-products/3.svg',standart_title,standart_price)
+				.new-products__slide.swiper-slide
+					+product-card('yes','../../images/new-products/4.svg',standart_title,standart_price)
+				.new-products__slide.swiper-slide
+					+product-card('yes','../../images/new-products/3.svg',standart_title,standart_price)
+				.new-products__slide.swiper-slide
+					+product-card('yes','../../images/new-products/3.svg',standart_title,standart_price)
 			.swiper-button-prev
 			.swiper-button-next
