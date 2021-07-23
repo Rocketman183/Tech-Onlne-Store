@@ -1,0 +1,43 @@
+.zip-ad {
+	background: #F5F9FF;
+	padding: 15px 0;
+	text-align: center;
+
+	p {
+		color: #272560;
+		font: 12px 'Poppins';
+		margin: 10px 0;
+
+		span {
+			font-family: 'Poppins Semi-bold';
+		}
+	}
+
+	a {
+		font: 14px 'Poppins';
+		text-decoration: underline;
+	}
+
+	&__line {
+		color: #00AEB8 !important;
+		font-family: 'Poppins Semi-bold' !important;
+		display: none;
+	}
+
+	@media #{$tablet} {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&__line {
+			display: block;
+			margin-left: 10px !important;
+		}
+		p {
+			margin: 0;
+			margin-left: 10px;
+		}
+		a {
+			margin-left: 10px;
+		}
+	}
+}

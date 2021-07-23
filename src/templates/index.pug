@@ -1,6 +1,7 @@
 extends ./layout/layout
 include ./components/slider-msi
 include ./components/new-products
+include ./components/zip-ad
 
 block variables
     - var page_title = 'Главная';
@@ -10,5 +11,6 @@ block variables
 block content 
     +slider-msi
     +new-products
+    +zip-ad
     script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
     script(src='../js/bundle.js')
