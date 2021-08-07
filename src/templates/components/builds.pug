@@ -1,0 +1,21 @@
+include product-card
+
+mixin builds()
+	.workspace
+		.builds.swiper-container
+			h1 Custome Builds
+			a(href="#") See All Products 
+			.builds__wrapper.swiper-wrapper
+				.custom-builds
+					h1 Custome Builds
+					a(href="#") See All Products					
+				.builds__slide.swiper-slide
+					+product-card
+				.builds__slide.swiper-slide
+					+product-card
+				.builds__slide.swiper-slide
+					+product-card
+				.builds__slide.swiper-slide
+					+product-card
+				.builds__slide.swiper-slide
+					+product-card
